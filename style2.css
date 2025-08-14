@@ -1,5 +1,4 @@
 
-
 :root {
     --primary: #ff3366;
     --primary-dark: #e61e4d;
@@ -183,7 +182,7 @@ button.active span:nth-child(3) {
 
 /* Profile */
 .profile-container {
-    margin: 2rem auto;
+    margin: 0rem auto;
     width: 70vw;
     height: auto;
     padding: 1rem;
