@@ -234,6 +234,11 @@ button.active span:nth-child(3) {
   padding: 0.5rem;
 }
 
+.utilities a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .general-utilities {
     display: flex;
     flex-direction: column;
