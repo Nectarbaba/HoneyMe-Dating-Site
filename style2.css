@@ -26,7 +26,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--gray-100);
-    background-image: linear-gradient(to bottom, #f6f5f4 20%, #e81d1d 95%);
+    background-image: linear-gradient(to bottom, #dfc4a9 20%, #e81d1d 95%);
     background-size: cover;
     background-attachment: fixed;
     color: var(--gray-700);
@@ -785,7 +785,7 @@ input:focus {
 }
 
 
-
+/*//////////////////Bigger Screen /////////////////////////////////////////////////*/
 @media (min-width: 600px) {
     
     .card-container {
@@ -841,5 +841,11 @@ input:focus {
     .card-info h2 {
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
+    }
+
+    .profile-container {
+        height: 100vh;
+        font-weight: bolder;
+        font-size: 1.2rem;
     }
 }
