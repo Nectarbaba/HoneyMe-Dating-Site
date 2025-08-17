@@ -11,23 +11,10 @@
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
 </head>
 <body>
-    <form action="/signup" method="post">
+    <form action="/profile-update" method="post">
         <fieldset class="form-fieldset">
             <img src="/uploads/profile_images/logo.png" alt="Logo">
-            <legend class="form-title">Sign Up</legend>
-            
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" required autofocus autocomplete="name" placeholder="John Doe">
-            
-            <label for="gender">Gender</label>
-            <input list="gender" name="gender" required>
-            <datalist id="gender">
-                <option value="Male">
-                <option value="Female">
-                <option value="Other">
-            </datalist>
-            
-            <label for="countries">Countries</label>
+            <label for="countries">Country</label>
             <input list="countries" name="countries" required>
             <datalist id="countries">
                 <option value="United States">
@@ -54,20 +41,22 @@
             </datalist>
             
             <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" name="username" required readonly>
             
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Re-enter your password">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
 
-            <button type="submit" class="sign-up" ><a href="/discover.html">Register</a></button>
-            <a href="#">Forgot Password?</a>
-            <a href="/terms&condition.html">Terms and Conditions</a>
+            <label for="profile-image">Profile Image</label>
+            <input type="file" id="profile-image" name="profile-image" accept="image/*">
+
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio" rows="3" cols="50" placeholder="Tell us about yourself"></textarea>
+
+            <button type="submit" class="edit-profile">Save Changes</button>
+            <a href="/change-password.html">Change Password</a>
         </fieldset>
     </form>
-    <footer class="footer-homepage"></footer>
+    <footer class="footer-homepage">
         <p>&copy; 2025 LoveMatch. All rights reserved.</p>
     </footer>
 </body>
